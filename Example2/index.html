@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מאמר DevOps</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <h1>מבוא ל-DevOps: שיפור שיתוף הפעולה והיעילות</h1>
+    </header>
+
+    <main>
+        <!-- מאמר -->
+        <section id="article-content">
+            <h2>מה זה DevOps?</h2>
+            <p>
+                DevOps הוא שילוב של פיתוח תוכנה (Development) ותפעול IT (Operations), שמטרתו לקצר את מחזור החיים של פיתוח תוכנה תוך שמירה על איכות גבוהה.
+                התרבות של DevOps מעודדת שיתוף פעולה בין צוותי הפיתוח והתפעול, תוך שימוש בכלים ושיטות עבודה מתקדמות כמו אינטגרציה מתמשכת (CI),
+                פריסה מתמשכת (CD), ואוטומציה.
+            </p>
+
+            <h2>יתרונות DevOps</h2>
+            <p>
+                היתרונות של DevOps כוללים שחרור מהיר יותר של תוכנה, שיפור האמינות, ויכולת התאוששות מהירה יותר מתקלות.
+                לדוגמה, שימוש בכלים כמו Docker ו-Kubernetes מאפשר ניהול יעיל של תשתיות.
+            </p>
+
+            <h2>דוגמה לעיצוב לא מוצלח</h2>
+            <div class="bad-contrast">
+                <p>
+                    זו דוגמה לעיצוב עם ניגודיות צבעים גרועה. הטקסט בצבע אדום על רקע לבן קשה לקריאה ופוגע בחוויית המשתמש.
+                </p>
+            </div>
+        </section>
+
+        <!-- אינטראקציה עם API -->
+        <section id="api-interaction">
+            <h2>הצגת נתוני API בצורה אינטראקטיבית</h2>
+            <p>
+                לחץ על הכפתורים למטה כדי לקבל ערכות צבעים דרך The Color API או כדי לראות שגיאה.
+            </p>
+
+            <button onclick="fetchColorScheme('triad')">הצג ערכת צבעים אנלוגית</button>
+            <button onclick="fetchColorScheme('complement')">הצג ערכת צבעים משלימה</button>
+            <button onclick="fetchError('monochrome')">בדוק שגיאת API</button>
+
+            <div id="api-result"></div>
+        </section>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
+
